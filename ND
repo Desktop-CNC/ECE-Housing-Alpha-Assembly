@@ -172,3 +172,4 @@ $Pins/LimitZ=3
 
 >>> $Pins/LimitZ=3
 An error was detected while sending '$Pins/LimitZ=3': (error:2) Missing the expected G-code word value or numeric value format is not valid. Streaming has been paused.
+[HLP:$$ $# $G $I $N $x=val $Nx=line $J=line $SLP $C $X $H $B ~ ! ? ctrl-x]
