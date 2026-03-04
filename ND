@@ -167,3 +167,5 @@ ok
 [PIN:20,I2C SDA]
 [PIN:1,RX,Modbus]
 [PIN:0,TX,Modbus]
+
+$Pins/LimitZ=3
