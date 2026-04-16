@@ -1,21 +1,7 @@
-ok
->>> $30
-$30=23885.800
-ok
->>> $30 = 1000
-ok
->>> m3 s1000
-ok
->>> $30
-$30=1000.000
-ok
->>> m3 s1000
-ok
->>> $$
 $0 = 10.0    (Step pulse time, microseconds)
 $1 = 25    (Step idle delay, milliseconds)
 $2 = 4    (Step pulse invert, mask)
-$3 = 0    (Step direction invert, mask)
+$3 = 3    (Step direction invert, mask)
 $4 = 15    (Invert step enable pin, boolean)
 $5 = 8    (Invert limit pins, boolean)
 $6 = 1    (Invert probe pin, boolean)
@@ -24,7 +10,7 @@ $10 = 511    (Status report options, mask)
 $11 = 0.010    (Junction deviation, millimeters)
 $12 = 0.002    (Arc tolerance, millimeters)
 $13 = 0    (Report in inches, boolean)
-$14 = 6
+$14 = 4
 $15 = 0
 $16 = 4
 $17 = 0
@@ -32,18 +18,18 @@ $18 = 0
 $19 = 0
 $20 = 0    (Soft limits enable, boolean)
 $21 = 1    (Hard limits enable, boolean)
-$22 = 17    (Homing cycle enable, boolean)
-$23 = 1    (Homing direction invert, mask)
+$22 = 7    (Homing cycle enable, boolean)
+$23 = 0    (Homing direction invert, mask)
 $24 = 100.0    (Homing locate feed rate, mm/min)
 $25 = 500.0    (Homing search seek rate, mm/min)
 $26 = 50    (Homing switch debounce delay, milliseconds)
-$27 = 2.000    (Homing switch pull-off distance, millimeters)
+$27 = 5.000    (Homing switch pull-off distance, millimeters)
 $28 = 0.100
 $29 = 0.0
-$30 = 1000.000    (Maximum spindle speed, RPM)
-$31 = 2673.200    (Minimum spindle speed, RPM)
+$30 = 24000.000    (Maximum spindle speed, RPM)
+$31 = 0.000    (Minimum spindle speed, RPM)
 $32 = 0    (Laser-mode enable, boolean)
-$33 = 50.0
+$33 = 2000.0
 $34 = 0.0
 $35 = 0.0
 $36 = 100.0
@@ -62,16 +48,16 @@ $57 = 100.0
 $58 = -5.0
 $59 = 500.0
 $60 = 0
-$61 = 0
+$61 = 1
 $62 = 0
 $63 = 3
 $64 = 1
-$65 = 0
-$66 = 2637.87,0.805343,-663.989
-$67 = 3010.37,0.969176,-194.994
-$68 = 7394.59,0.924994,-535.096
-$69 = 15329.9,0.874465,-1304.41
-$70 = 3
+$65 = 1
+$66 = 2637.00,0.805000,663.900
+$67=
+$68=
+$69=
+$70 = 1
 $100 = 40.17076    (X-axis travel resolution, step/mm)
 $101 = 40.17076    (Y-axis travel resolution, step/mm)
 $102 = 40.17076    (Z-axis travel resolution, step/mm)
@@ -135,11 +121,3 @@ $801 = 50.000
 $802 = 50.000
 $803 = 100.000
 ok
-
-
-$30=1000   (Set Max RPM to 1000 for easy math)
-$31=0      (Set Min RPM to 0)
-$66=0      (Disable existing linearization)
-$67=0
-$68=0
-$69=0
